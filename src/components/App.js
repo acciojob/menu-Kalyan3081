@@ -13,12 +13,32 @@ const App = () => {
     return (
         <>
             <div className={styles.maincontainer}>
-                <h1>Our Menu</h1>
+                <h1 id='main'>Our Menu</h1>
                 <ul>
-                    <li onClick={() => setCategory('all')}>All</li>
-                    <li onClick={() => setCategory('breakfast')}>Breakfast</li>
-                    <li onClick={() => setCategory('lunch')}>Lunch</li>
-                    <li onClick={() => setCategory('shakes')}>Shakes</li>
+                    <li
+                        id="filter-btn-1"
+                        onClick={() => setCategory('all')}
+                    >
+                        All
+                    </li>
+                    <li
+                        id="filter-btn-2"
+                        onClick={() => setCategory('breakfast')}
+                    >
+                        Breakfast
+                    </li>
+                    <li
+                        id="filter-btn-3"
+                        onClick={() => setCategory('lunch')}
+                    >
+                        Lunch
+                    </li>
+                    <li
+                        id="filter-btn-4"
+                        onClick={() => setCategory('shakes')}
+                    >
+                        Shakes
+                    </li>
                 </ul>
             </div>
             <div className={styles.container}>
