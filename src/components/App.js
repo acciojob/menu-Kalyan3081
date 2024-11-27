@@ -22,18 +22,21 @@ const App = () => {
                         All
                     </li>
                     <li
+data-test-id="menu-item-breakfast"
                         id="filter-btn-2"
                         onClick={() => setCategory('breakfast')}
                     >
                         Breakfast
                     </li>
                     <li
+data-test-id="menu-item-lunch"
                         id="filter-btn-3"
                         onClick={() => setCategory('lunch')}
                     >
                         Lunch
                     </li>
                     <li
+data-test-id="menu-item-shakes"
                         id="filter-btn-4"
                         onClick={() => setCategory('shakes')}
                     >
